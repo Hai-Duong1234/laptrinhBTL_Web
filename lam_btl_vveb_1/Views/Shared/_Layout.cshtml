@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELPHY - Thương mại điện tử</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <!-- Phần đầu trang -->
+    <header>
+        <div class="top-bar">
+            <p>Gọi miễn phí: (+88) 01737803547</p>
+            <div class="account-links">
+                <button id="link-dang-nhap" data-username="">Đăng nhập/Đăng ký</button>
+            </div>
+
+        </div>
+        <div class="logo-search-cart">
+            <div class="logo">
+                <h1>SELPHY</h1>
+                <p>Thương mại điện tử - Lựa chọn tốt nhất của bạn</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>Tìm kiếm</button>
+            </div>
+            <div class="cart">
+                <a href="#">Giỏ hàng - 2 sản phẩm</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thanh menu điều hướng -->
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Điện thoại</a></li>
+            <li><a href="#">Máy tính bảng</a></li>
+            <li><a href="#">Tai nghe</a></li>
+            <li><a href="#">Máy ảnh & Ảnh</a></li>
+            <li><a href="#">Máy tính để bàn</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+        </ul>
+    </nav>
+
+    <!-- Modal Đăng nhập/Đăng ký -->
+    <div id="modal-dang-nhap" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Đăng nhập / Đăng ký</h2>
+            <form id="form-dang-nhap">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Phần nội dung chính -->
+   @RenderBody()
+    <section class="main-banner">
+        <div class="banner-images">
+            <div class="banner-image">
+                <img src="imges/banner1.png" alt="Chương trình 1">
+            </div>
+            <div class="banner-image">
+                <img src="imges/banner2.png" alt="Chương trình 2">
+            </div>
+            <div class="banner-image">
+                <img src="imges/banner3.png" alt="Chương trình 3">
+            </div>
+            <!-- Thêm nhiều hình ảnh như vậy nếu cần -->
+        </div>
+        <div class="banner-content">
+            <h2>Chương trình hấp dẫn đang chờ đợi!</h2>
+            <h3>Bộ sưu tập tuyệt vời</h3>
+            <p>Mauris eu ornare odio, commodo dignissim elit...</p>
+            <a href="#" class="button">Tìm hiểu thêm</a>
+            <a href="#" class="button">Xem bộ sưu tập</a>
+        </div>
+    </section>
+
+    <!-- Phần sản phẩm mới nhất -->
+    <section class="latest-products">
+        <div class="header-container">
+            <!-- Thêm div để nhóm tiêu đề và video -->
+            <h2>Sản phẩm mới nhất</h2> <!-- Tiêu đề nằm ở hàng trên cùng -->
+            <!-- Thêm video vào đây -->
+            <div class="video-container">
+                <video controls width="600">
+                    <!-- Thay đổi width tùy theo ý thích -->
+                    <source src="~/imges/video1.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video.
+                </video>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="product">
+                <img src="imges/moi1.jpg" alt="Sản phẩm mới 1">
+                <p>Sản phẩm mới 1 - Khuyến mãi đặc biệt</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/moi2.jpg" alt="Sản phẩm mới 2">
+                <p>Sản phẩm mới 2 - Giảm giá 20%</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/moi3.jpg" alt="Sản phẩm mới 3">
+                <p>Sản phẩm mới 3 - Mới ra mắt</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/moi4.jpg" alt="Sản phẩm mới 4">
+                <p>Sản phẩm mới 4 - Mua 1 tặng 1</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Phần sản phẩm nổi bật -->
+    <section class="featured-products">
+        <h2>Sản phẩm nổi bật</h2> <!-- Tiêu đề nằm ở hàng trên cùng -->
+        <div class="products-container">
+            <div class="product">
+                <img src="imges/camera.jpg" alt="Sản phẩm nổi bật 1">
+                <p>Sản phẩm nổi bật 1 - Khuyến mãi lớn</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/laptop.jpg" alt="Sản phẩm nổi bật 2">
+                <p>Sản phẩm nổi bật 2 - Giảm giá 30%</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/phone.jpg" alt="Sản phẩm nổi bật 3">
+                <p>Sản phẩm nổi bật 3 - Mới ra mắt</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="product">
+                <img src="imges/sony.jpg" alt="Sản phẩm nổi bật 4">
+                <p>Sản phẩm nổi bật 4 - Mua 2 tặng 1</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <script src="js/site.js"></script> <!-- Liên kết với file JavaScript -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Thông tin</h3>
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Sơ đồ trang web</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Dịch vụ khách hàng</h3>
+                    <ul>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Ưu tiên khách hàng</a></li>
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Chính sách trả hàng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Thanh toán và vận chuyển</h3>
+                    <ul>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn vận chuyển</a></li>
+                        <li><a href="#">Địa điểm giao hàng</a></li>
+                        <li><a href="#">Thời gian giao hàng dự kiến</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Tài khoản của tôi</h3>
+                    <ul>
+                        <li><a href="#">Địa chỉ của tôi</a></li>
+                        <li><a href="#">Phiếu quà tặng</a></li>
+                        <li><a href="#">Trả hàng và đổi trả</a></li>
+                        <li><a href="#">Tùy chọn vận chuyển</a></li>
+                        <li><a href="#">Thông tin cá nhân của tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Địa chỉ: No. 96. Jecica City, NJ 07305, New York, USA</p>
+                    <p>Điện thoại: 01737803547</p>
+                    <p>Email: admin@bootexperts.com</p>
+                    <ul class="social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   </body>
+   </html>

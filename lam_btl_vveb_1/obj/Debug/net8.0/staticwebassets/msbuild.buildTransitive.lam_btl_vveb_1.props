@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\lam_btl_vveb_1.props" />
+</Project>
