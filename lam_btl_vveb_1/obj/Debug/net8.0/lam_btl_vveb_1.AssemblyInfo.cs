@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lam_btl_vveb_1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0fb330a3c8c8d34e81c40e847b86979baa5e2aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fa64b3840462fbefc51f5fa77fed4070bf9de74")]
 [assembly: System.Reflection.AssemblyProductAttribute("lam_btl_vveb_1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lam_btl_vveb_1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
